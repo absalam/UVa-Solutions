@@ -1,0 +1,34 @@
+/*
+*Date: 12/04/2016
+*Author: Abdus Salam
+*Contact: salam4268@gmail.com
+*Licence: MIT
+*Problem No: 10783
+*/
+
+#include <stdio.h>
+
+int main()
+{
+    int t, p, q, i, cn, x;
+
+    scanf("%d", &t);
+
+    cn=0;
+    while(t--) {
+        cn++;
+        scanf("%d %d", &p, &q);
+        x=0;
+        i=q;
+        while(i<=q) {
+            if(i%2!=0)
+                x+=i;
+            if(p%2!=0)
+                i+=2;
+            else
+                i++;
+        }
+        printf("Case %d: %d\n", cn, x);
+    }
+    return 0;
+}
