@@ -1,0 +1,25 @@
+/*
+*Date: 12/04/2016
+*Author: Abdus Salam
+*Contact: salam4268@gmail.com
+*Licence: MIT
+*Problem No: 10055
+*/
+
+#include <stdio.h>
+
+int main()
+{
+    long long hsn, osn, temp, res;
+
+    while(scanf("%lld %lld", &hsn, &osn) != EOF) {
+        if(hsn>osn) {
+            temp=hsn;
+            hsn=osn;
+            osn=temp;
+        }
+        res=osn-hsn;
+        printf("%lld\n", res);
+    }
+    return 0;
+}
