@@ -2,8 +2,8 @@
 *Date: 12/04/2016
 *Author: Abdus Salam
 *Contact: salam4268@gmail.com
-*Licence: MIT
 *Problem No: 10783
+*Name: Odd Sum
 */
 
 #include <stdio.h>
