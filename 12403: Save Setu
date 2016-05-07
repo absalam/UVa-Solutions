@@ -1,0 +1,41 @@
+/*
+*Date: 07/05/2016
+*Author: Abdus Salam
+*Contact: salam4268@gmail.com
+*Problem No: 12403
+*Name: Save Setu
+*/
+
+#include <stdio.h>
+#include <string.h>
+
+int calc(char s[]);
+
+int main()
+{
+    char s[20];
+    int t, total, donate;
+
+    scanf("%d", &t);
+
+    total=0;
+    while(t>=0) {
+        gets(s);
+        if(strlen(s)>6)
+            total+=calc(s);
+        if(strcmp(s, "report")==0)
+            printf("%d\n", total);
+        t--;
+    }
+    return 0;
+}
+
+int calc(char s[])
+{
+    int res, i;
+
+    res=0;
+    for(i=7; i<strlen(s); i++)
+        res=res*10+(s[i]-48);
+    return res;
+}
