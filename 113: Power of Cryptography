@@ -1,0 +1,21 @@
+/*
+*Date: 09/05/2016
+*Author: Abdus Salam
+*Contact: salam4268@gmail.com
+*Source: http://uva.onlinejudge.org
+*Problem No: 113
+*Name: Power of Cryptography
+*/
+
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    double n, p;
+
+    while(scanf("%lf", &n)==1 && scanf("%lf", &p)==1) {
+        printf("%.0lf", pow(p, 1/n));
+    }
+    return 0;
+}
